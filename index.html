@@ -97,7 +97,7 @@ body{
 }
 
 .qris-box img{
-    width:250px;
+    width:260px;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
@@ -235,6 +235,7 @@ body{
 
 <body>
 
+<!-- LOADING -->
 <div class="loading" id="loading">
     <div class="loader"></div>
     <p>Memproses Pendaftaran...</p>
@@ -254,21 +255,25 @@ body{
 
         <form id="registerForm">
 
+            <!-- NAMA -->
             <div class="input-box">
                 <label>Nama Lengkap</label>
                 <input type="text" placeholder="Masukkan nama lengkap" required>
             </div>
 
+            <!-- WHATSAPP -->
             <div class="input-box">
                 <label>Nomor WhatsApp</label>
                 <input type="number" placeholder="08xxxxxxxxxx" required>
             </div>
 
+            <!-- EMAIL -->
             <div class="input-box">
                 <label>Email</label>
                 <input type="email" placeholder="example@gmail.com" required>
             </div>
 
+            <!-- JENIS KELAMIN -->
             <div class="input-box">
                 <label>Jenis Kelamin</label>
                 <select required>
@@ -278,6 +283,7 @@ body{
                 </select>
             </div>
 
+            <!-- KATEGORI -->
             <div class="input-box">
                 <label>Pilih Kategori</label>
                 <select required>
@@ -287,6 +293,22 @@ body{
                 </select>
             </div>
 
+            <!-- SIZE JERSEY -->
+            <div class="input-box">
+                <label>Pilih Size Jersey</label>
+                <select required>
+                    <option value="">Pilih Size Jersey</option>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>XXXL</option>
+                </select>
+            </div>
+
+            <!-- ALAMAT -->
             <div class="input-box">
                 <label>Alamat Lengkap</label>
                 <textarea placeholder="Masukkan alamat lengkap"></textarea>
@@ -298,9 +320,10 @@ body{
                 <p>Scan QRIS Untuk Pembayaran</p>
             </div>
 
-            <!-- UPLOAD BUKTI PEMBAYARAN -->
+            <!-- UPLOAD -->
             <div class="upload-box">
                 <h3>Upload Bukti Pembayaran</h3>
+
                 <p style="font-size:13px;color:#666;">
                     Upload screenshot atau foto pembayaran
                 </p>
@@ -323,10 +346,12 @@ body{
                 <p>✔ Produk Sponsor</p>
             </div>
 
+            <!-- BUTTON -->
             <button type="submit" class="btn">
                 DAFTAR SEKARANG
             </button>
 
+            <!-- SUCCESS -->
             <div class="success" id="success">
                 ✅ Pendaftaran Berhasil Dikirim
             </div>
