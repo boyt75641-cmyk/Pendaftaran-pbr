@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -74,8 +75,7 @@ body{
 }
 
 .input-box input,
-.input-box select,
-.input-box textarea{
+.input-box select{
     width:100%;
     padding:14px;
     border:none;
@@ -84,11 +84,6 @@ body{
     outline:none;
     font-size:14px;
     font-family:'Poppins',sans-serif;
-}
-
-.input-box textarea{
-    resize:none;
-    height:90px;
 }
 
 .qris-box{
@@ -261,18 +256,6 @@ body{
                 <input type="text" placeholder="Masukkan nama lengkap" required>
             </div>
 
-            <!-- WHATSAPP -->
-            <div class="input-box">
-                <label>Nomor WhatsApp</label>
-                <input type="number" placeholder="08xxxxxxxxxx" required>
-            </div>
-
-            <!-- EMAIL -->
-            <div class="input-box">
-                <label>Email</label>
-                <input type="email" placeholder="example@gmail.com" required>
-            </div>
-
             <!-- JENIS KELAMIN -->
             <div class="input-box">
                 <label>Jenis Kelamin</label>
@@ -281,6 +264,42 @@ body{
                     <option>Laki-laki</option>
                     <option>Perempuan</option>
                 </select>
+            </div>
+
+            <!-- TANGGAL LAHIR -->
+            <div class="input-box">
+                <label>Tanggal Lahir</label>
+                <input type="date" required>
+            </div>
+
+            <!-- UMUR -->
+            <div class="input-box">
+                <label>Umur</label>
+                <input type="number" placeholder="Masukkan umur" required>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="input-box">
+                <label>Email Aktif</label>
+                <input type="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <!-- WHATSAPP -->
+            <div class="input-box">
+                <label>Nomor WhatsApp</label>
+                <input type="number" placeholder="08xxxxxxxxxx" required>
+            </div>
+
+            <!-- DOMISILI -->
+            <div class="input-box">
+                <label>Kota / Domisili</label>
+                <input type="text" placeholder="Masukkan kota / domisili" required>
+            </div>
+
+            <!-- NAMA BIB -->
+            <div class="input-box">
+                <label>Nama BIB</label>
+                <input type="text" placeholder="Masukkan nama BIB" required>
             </div>
 
             <!-- KATEGORI -->
@@ -293,7 +312,7 @@ body{
                 </select>
             </div>
 
-            <!-- SIZE JERSEY -->
+            <!-- SIZE -->
             <div class="input-box">
                 <label>Pilih Size Jersey</label>
                 <select required>
@@ -306,12 +325,6 @@ body{
                     <option>XXL</option>
                     <option>XXXL</option>
                 </select>
-            </div>
-
-            <!-- ALAMAT -->
-            <div class="input-box">
-                <label>Alamat Lengkap</label>
-                <textarea placeholder="Masukkan alamat lengkap"></textarea>
             </div>
 
             <!-- QRIS -->
@@ -427,3 +440,4 @@ form.addEventListener("submit", function(e){
 
 </body>
 </html>
+```
